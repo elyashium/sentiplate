@@ -1,4 +1,5 @@
 import background from '../images/bg.jpg';
+import "../App.css"
 
 
 
