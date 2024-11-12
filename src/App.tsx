@@ -2,8 +2,9 @@
 
 export default function App() {
   return (
-  <div className="hero">
-   
-  </div>
+    <div className="hero">
+      
+    
+    </div>
   )
 }
