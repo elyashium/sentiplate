@@ -6,12 +6,18 @@
     padding: 0;
   }
   
+  main {
+        overflow-x: hidden;
+  }
+  
   .hero {
+
     background-image: url('./images/bg.jpg');
     background-size: cover;
     background-position: center;
-    width: 98.8vw;
+    width: 99vw;
     height: 100vh;
+    
   }
 
   .second-section{
