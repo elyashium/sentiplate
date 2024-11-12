@@ -1,1 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
+.hero{
+    background-size: cover;
+    width: 100px;
+}

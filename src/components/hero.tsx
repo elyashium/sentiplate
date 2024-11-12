@@ -2,15 +2,14 @@ import background from '../images/bg.jpg';
 
 
 
-export default function hero() {
+
+export default function Hero() {
   return (
 
 
-    <div>
+    <div className='hero'>
         <img src={background} alt="" />
-        <div style={{ backgroundImage: `url(${background})` }}>
-        {/* Your component content */}
-      </div>
+        
     </div>
   )
 

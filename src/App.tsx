@@ -1,10 +1,8 @@
-
+import Hero from "./components/Hero";
+import './App.css'
 
 export default function App() {
   return (
-    <div className="hero">
-      
-    
-    </div>
+   <Hero/>
   )
 }
