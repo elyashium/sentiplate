@@ -1,25 +1,39 @@
-
-
-
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  main {
-        overflow-x: hidden;
-  }
-  
-  .hero {
+  margin: 0;
+  padding: 0;
+}
 
-    background-image: url('./images/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 99vw;
-    height: 100vh;
-    
+main {
+  overflow-x: hidden;
+}
+
+.hero {
+
+  background-image: url('./images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 99vw;
+  height: 100vh;
+
+}
+
+.second-section {
+  height: 100vh;
+}
+
+
+.autoRotate {
+  animation: autoRotate;
+  animation-timeline: view();
+}
+
+@keyframes autoRotate {
+  from {
+    transform: rotate(0deg);
   }
 
-  .second-section{
-    height: 100vh;
+  to {
+    transform: rotate(360deg);
   }
+
+}
