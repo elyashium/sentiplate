@@ -22,9 +22,19 @@ body{
 
 }
 
-.second-section {
-  height: 200vh;
+
+.titleCard{
+  position: relative;
+  left: 38vw;
+  top: 50vh;
 }
+
+.title{
+  width: 535px;
+  height: 115px;
+  font-size: 90;
+}
+
 
 
 .topLeft img{
@@ -66,4 +76,10 @@ body{
     transform: rotate(360deg);
   }
 
+}
+
+
+
+.second-section {
+  height: 200vh;
 }
