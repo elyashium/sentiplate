@@ -10,12 +10,12 @@ export const Hero = () => {
       </div>
 
       <div className="redBowl">
-        <img src="src\images\Redbowl.png" alt="red bowl" />
+        <img src="src\images\Redbowl.png" alt="red bowl" className="autoRotate" />
       </div>
 
-      <div className="whiteRightDown">
-        <img src="src\images\white right.png" alt="white bowl right " />
-      </div>
+      {/* <div className="whiteRightDown">
+        <img src="src\images\whiteRightDown.png" alt="white bowl right " className="autoRotate" />
+      </div> */}
 
     </div>
   )
