@@ -12,7 +12,7 @@ main {
   background-image: url('./images/bg.png');
   background-size: cover;
   background-position: center;
-  width: 99vw;
+  width: 100vw;
   height: 110vh;
 
 }
@@ -36,11 +36,16 @@ main {
   left: 2vw;
 }
 
-.WhiteRightDown img {
+.whiteRightDown{
+  position: relative;
+  overflow: hidden;
+}
+
+.whiteRightDown img {
   position: absolute;
-  bottom: 38vh;
-  scale: 1.2;
-  left: 12vw;
+  left: 70vw;
+  scale : 1.3;
+  bottom: -10vw;
 }
 
 

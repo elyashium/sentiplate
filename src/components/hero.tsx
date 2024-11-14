@@ -13,9 +13,9 @@ export const Hero = () => {
         <img src="src\images\Redbowl.png" alt="red bowl" className="autoRotate" />
       </div>
 
-      {/* <div className="whiteRightDown">
+      <div className="whiteRightDown">
         <img src="src\images\whiteRightDown.png" alt="white bowl right " className="autoRotate" />
-      </div> */}
+      </div>
 
     </div>
   )
