@@ -6,7 +6,7 @@ export const Hero = () => {
     <div className='hero'>
 
       <div className="topLeft">
-        <img src="src\images\topLeft.png" alt="top left bowl" />
+        <img src="src\images\topLeft.png" alt="top left bowl" className="autoRotate" />
       </div>
 
       <div className="redBowl">
@@ -14,7 +14,7 @@ export const Hero = () => {
       </div>
 
       <div className="whiteRightDown">
-        <img src="src\images\white right.png" alt="white bowl right down" />
+        <img src="src\images\white right.png" alt="white bowl right " />
       </div>
 
     </div>

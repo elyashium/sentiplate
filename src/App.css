@@ -22,6 +22,22 @@ main {
 }
 
 
+.topLeft img{
+  position: relative;
+  bottom: 35vh;
+  scale: 1.2;
+  left: 12vw;
+}
+
+.redBowl img {
+  
+}
+
+.WhiteRightDown img {
+ 
+}
+
+
 .autoRotate {
   animation: autoRotate;
   animation-timeline: view();
