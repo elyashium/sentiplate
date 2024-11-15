@@ -48,7 +48,9 @@ export const Hero = () => {
         </div>
 
 
-        
+        <div className="upperline"></div>
+
+        <div className="lowerline"></div>
 
 
       </div>
