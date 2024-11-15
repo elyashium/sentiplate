@@ -6,10 +6,10 @@ import MoodPage from "./components/MoodPage";
 export default function App() {
   return (
     <Router>
-    <Routes>
-      <Route path="/" element={<Hero />} />
-      <Route path="/MoodBasedRecommendation" element={<MoodPage />} />
-    </Routes>
-  </Router>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/MoodBasedRecommendation" element={<MoodPage />} />
+      </Routes>
+    </Router>
   )
 }
