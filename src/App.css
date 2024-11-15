@@ -13,6 +13,7 @@ main {
 
 body {
   overflow-x: hidden;
+  font-family: inter;
 }
 
 .hero {
@@ -338,4 +339,101 @@ padding: 3vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cardImage{
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.backButton {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.backButton:hover {
+  background-color: #e0e0e0;
+}
+
+.recipeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.recipeCard {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipeCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipeTitle {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: #333;
+  margin : 4vh;
+}
+
+.energyValue {
+  font-size: 1.1rem;
+  color: #2c5282;
+  margin-bottom: 15px;
+  position: relative;
+  left: 4vh;
+}
+
+.nutritionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.nutritionItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  background-color: #f7fafc;
+  border-radius: 5px;
+}
+
+.label {
+  font-size: 0.875rem;
+  color: #4a5568;
+}
+
+.value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.cardImage{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }

@@ -9,6 +9,8 @@ export default function MoodSelect() {
     const [recipes, setRecipes] = useState([]);
     const [showMoodSelect, setShowMoodSelect] = useState(true);
     const [selectedMood, setSelectedMood] = useState('');
+    const [headerText, setHeaderText] = useState("Select the one that best describes you");
+
 
     const fetchRecipes = async () => {
         try {
@@ -24,6 +26,7 @@ export default function MoodSelect() {
 
     const handleHappyClick = async () => {
         const ingredients = await fetchRecipes();
+        setHeaderText("");
         if (ingredients.length > 0) {
             const filteredRecipes = ingredients.filter(item => {
                 const energy = Number(item["Energy (kcal)"]);
@@ -81,8 +84,11 @@ export default function MoodSelect() {
     };
 
     return (
+        
         <div className="container">
+
             {showMoodSelect ? (
+
                 <div className="moodContainer">
                     <div className="HappySelection" onClick={handleHappyClick}>
                         <div className="lottieContainer">
@@ -139,9 +145,11 @@ export default function MoodSelect() {
 
                             <div key={index} className="recipeCard">
 
-                                <img className='cardImage' src="{recipe.img_url}" alt="Recipe-Image" />
+                                <img className='cardImage' src={recipe.img_url} alt="Recipe-Image" />
+
 
                                 <h2 className="recipeTitle">{recipe.Recipe_title}</h2>
+
                                 <div className="recipeDetails">
                                     <div className="nutritionInfo">
                                         <p className="energyValue">Energy: {recipe["Energy (kcal)"]} kcal</p>
@@ -151,16 +159,16 @@ export default function MoodSelect() {
                                                 <span className="value">{recipe["Protein (g)"]}g</span>
                                             </div>
                                             <div className="nutritionItem">
-                                                <span className="label">Carbs</span>
-                                                <span className="value">{recipe["Carbohydrate (g)"]}g</span>
+                                                <span className="label">Region</span>
+                                                <span className="value">{recipe.Region}</span>
                                             </div>
                                             <div className="nutritionItem">
                                                 <span className="label">Fat</span>
-                                                <span className="value">{recipe["Fat (g)"]}g</span>
+                                                <span className="value">{recipe["Total lipid (fat) (g)"]}g</span>
                                             </div>
                                             <div className="nutritionItem">
-                                                <span className="label">Fiber</span>
-                                                <span className="value">{recipe["Fiber (g)"]}g</span>
+                                                <span className="label">Calories</span>
+                                                <span className="value">{recipe["Calories"]}g</span>
                                             </div>
                                         </div>
                                     </div>
@@ -171,91 +179,7 @@ export default function MoodSelect() {
                 </div>
             )}
 
-            <style jsx>{`
-        .container {
-          padding: 20px;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-
-        .header {
-          display: flex;
-          align-items: center;
-          margin-bottom: 30px;
-          gap: 20px;
-        }
-
-        .backButton {
-          padding: 10px 20px;
-          background-color: #f0f0f0;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 16px;
-          transition: background-color 0.3s;
-        }
-
-        .backButton:hover {
-          background-color: #e0e0e0;
-        }
-
-        .recipeGrid {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-          gap: 20px;
-        }
-
-        .recipeCard {
-          background: white;
-          border-radius: 10px;
-          padding: 20px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .recipeCard:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .recipeTitle {
-          font-size: 1.25rem;
-          margin-bottom: 15px;
-          color: #333;
-        }
-
-        .energyValue {
-          font-size: 1.1rem;
-          color: #2c5282;
-          margin-bottom: 15px;
-        }
-
-        .nutritionGrid {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 10px;
-        }
-
-        .nutritionItem {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 8px;
-          background-color: #f7fafc;
-          border-radius: 5px;
-        }
-
-        .label {
-          font-size: 0.875rem;
-          color: #4a5568;
-        }
-
-        .value {
-          font-size: 1rem;
-          font-weight: 600;
-          color: #2d3748;
-        }
-      `}</style>
+            
         </div>
     );
 }
