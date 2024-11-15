@@ -1,8 +1,19 @@
 
+
 import "../App.css"
+import { useNavigate } from "react-router-dom"
 
 export const Hero = () => {
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate("/MoodBasedRecommendation"); 
+  };
+
   return (
+    <main>
+
     <div className='hero'>
 
 
@@ -38,6 +49,7 @@ export const Hero = () => {
      
 
     </div>
+    </main>
   )
 }
 
