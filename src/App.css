@@ -180,7 +180,6 @@ body {
   justify-content: center;
   top: 20vh;
  
- 
 
 }
 
@@ -196,9 +195,8 @@ border-radius: 20px;
 .StressedSelection{
   height: 400px;
 width: 250px;
-background-color: rgba(255, 255, 255, 0.4);
+background-color: #CCCCCC;
 border-radius: 20px;
-backdrop-filter: blur(20px);
 }
 
 .RelaxedSelection{
