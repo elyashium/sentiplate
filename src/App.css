@@ -173,22 +173,44 @@ body {
   display: flex;
 }
 
+.moodContainer{
+  display: flex;
+  gap: 5vw;
+  position: relative;
+  justify-content: center;
+  top: 20vh;
+ 
+ 
+
+}
+
 
 .HappySelection{
   
 height: 400px;
 width: 250px;
 background-color: #CCCCCC;
+border-radius: 20px;
 }
 
 .StressedSelection{
-  
+  height: 400px;
+width: 250px;
+background-color: rgba(255, 255, 255, 0.4);
+border-radius: 20px;
+backdrop-filter: blur(20px);
 }
 
 .RelaxedSelection{
-  
+  height: 400px;
+width: 250px;
+background-color: #CCCCCC;
+border-radius: 20px;
 }
 
 .EnergeticSelection{
-  
+  height: 400px;
+width: 250px;
+background-color: #CCCCCC;
+border-radius: 20px;
 }
