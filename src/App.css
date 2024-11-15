@@ -173,3 +173,22 @@ body {
   display: flex;
 }
 
+
+.HappySelection{
+  
+height: 400px;
+width: 250px;
+background-color: #CCCCCC;
+}
+
+.StressedSelection{
+  
+}
+
+.RelaxedSelection{
+  
+}
+
+.EnergeticSelection{
+  
+}

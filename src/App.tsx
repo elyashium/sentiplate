@@ -8,7 +8,8 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Auth />} />
+        <Route path="/" element={<Hero />} />
+        <Route path ="/Auth" element ={<Auth />} />
         <Route path="/MoodBasedRecommendation" element={<MoodPage />} />
       </Routes>
     </Router>
