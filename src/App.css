@@ -179,10 +179,14 @@ body {
   position: relative;
   justify-content: center;
   top: 20vh;
+  padding: 3vh;
  
 
 }
 
+
+
+/* mood selcection page */
 
 .HappySelection{
   
@@ -190,6 +194,11 @@ height: 400px;
 width: 250px;
 background-color: #CCCCCC;
 border-radius: 20px;
+transition: transform 0.2s ; 
+}
+.HappySelection:hover{
+  transform: scale(1.1);
+
 }
 
 .StressedSelection{
@@ -197,6 +206,12 @@ border-radius: 20px;
 width: 250px;
 background-color: #CCCCCC;
 border-radius: 20px;
+transition: transform 0.2s ; 
+}
+
+.StressedSelection:hover{
+  transform: scale(1.1);
+ 
 }
 
 .RelaxedSelection{
@@ -204,11 +219,59 @@ border-radius: 20px;
 width: 250px;
 background-color: #CCCCCC;
 border-radius: 20px;
+transition: transform 0.2s ; 
 }
 
-.EnergeticSelection{
+.RelaxedSelection:hover{
+  transform: scale(1.1);
+
+}
+
+.EnergeticSelection {
   height: 400px;
-width: 250px;
-background-color: #CCCCCC;
-border-radius: 20px;
+  width: 250px;
+  background-color: #CCCCCC;
+  border-radius: 20px;
+  transition: transform 0.2s ; 
+}
+
+.EnergeticSelection:hover {
+  transform: scale(1.1);
+  
+ }
+
+.moodHeading{
+  font-family: inter;
+  font-size: 40px;
+  font-weight: 700;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 4vh;
+
+}
+
+.moodTitle{
+  font-family: inter;
+  font-weight: 600;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.moodDescription{
+  font-family: inter;
+  font-weight: 300;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.lottieContainer{
+  width: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
