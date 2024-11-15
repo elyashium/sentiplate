@@ -9,13 +9,17 @@ export const Hero = () => {
 
       <div className="titleCard">
 
-        <SearchBar />
+
         <h1 className="title">Sentiplate</h1>
         <div className="titleDescription">
           Find the perfect recipe for your every mood.
         </div>
+
         <div className="tryit">
-          <img src="src\images\tryitOut.svg" alt="" />
+
+          <div className="btn">Try it out</div>
+          <img src="src\images\arrow.svg" alt="" />
+
         </div>
 
       </div>
