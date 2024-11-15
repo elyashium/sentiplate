@@ -179,7 +179,7 @@ body {
   position: relative;
   justify-content: center;
   top: 20vh;
-  padding: 3vh;
+  
  
 
 }
@@ -195,6 +195,7 @@ width: 250px;
 background-color: #CCCCCC;
 border-radius: 20px;
 transition: transform 0.2s ; 
+padding: 3vh;
 }
 .HappySelection:hover{
   transform: scale(1.1);
@@ -207,6 +208,7 @@ width: 250px;
 background-color: #CCCCCC;
 border-radius: 20px;
 transition: transform 0.2s ; 
+padding: 3vh;
 }
 
 .StressedSelection:hover{
@@ -220,6 +222,7 @@ width: 250px;
 background-color: #CCCCCC;
 border-radius: 20px;
 transition: transform 0.2s ; 
+padding: 3vh;
 }
 
 .RelaxedSelection:hover{
@@ -233,6 +236,7 @@ transition: transform 0.2s ;
   background-color: #CCCCCC;
   border-radius: 20px;
   transition: transform 0.2s ; 
+  padding: 3vh;
 }
 
 .EnergeticSelection:hover {
@@ -247,7 +251,7 @@ transition: transform 0.2s ;
   display: flex;
   position: relative;
   justify-content: center;
-  top: 4vh;
+  top: 7vh;
 
 }
 
@@ -261,10 +265,11 @@ transition: transform 0.2s ;
 
 .moodDescription{
   font-family: inter;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   display: flex;
   justify-content: center;
+  margin-top: 4vh;
   
 }
 

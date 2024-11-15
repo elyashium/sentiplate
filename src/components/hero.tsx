@@ -20,7 +20,7 @@ export const Hero = () => {
         <div className="titleCard">
 
 
-          <h1 className="title">Sentiplate.</h1>
+          <h1 className="title">Groke</h1>
           <div className="titleDescription">
             Find the perfect recipe for your every mood.
           </div>

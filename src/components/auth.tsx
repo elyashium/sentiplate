@@ -3,6 +3,7 @@ export const Auth = () => {
       <div>
       <input placeholder="Email.."/>
       <input placeholder="Password.."/>
+      <button>sign in </button>
       </div>
 
   );
