@@ -1,7 +1,7 @@
 
 
 export default function MoodPage() {
-  return (
-    <div>MoodPage</div>
-  )
+    return (
+        <div>MoodPage</div>
+    )
 }
