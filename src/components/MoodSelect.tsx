@@ -90,6 +90,8 @@ export default function MoodSelect() {
             {showMoodSelect ? (
 
                 <div className="moodContainer">
+                    <h1 className="oneLineText">{headerText}</h1>
+                    
                     <div className="HappySelection" onClick={handleHappyClick}>
                         <div className="lottieContainer">
                             <Lottie animationData={happyAnimation} loop={true} />
@@ -131,7 +133,7 @@ export default function MoodSelect() {
                     </div>
                 </div>
             ) : (
-                <div className="recipesContainer">
+                <div className="recipesContainer" >
                     <div className="header">
                         <button onClick={handleBackClick} className="backButton">
                             ← Back to Mood Selection
@@ -153,6 +155,7 @@ export default function MoodSelect() {
                                 <div className="recipeDetails">
                                     <div className="nutritionInfo">
                                         <p className="energyValue">Energy: {recipe["Energy (kcal)"]} kcal</p>
+                                        <a className="recipeLink" target="_blank" href={recipe.url}>Link to the recipe</a>
                                         <div className="nutritionGrid">
                                             <div className="nutritionItem">
                                                 <span className="label">Protein</span>

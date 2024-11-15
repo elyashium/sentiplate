@@ -4,7 +4,7 @@ const ThreeDComponent = () => {
   return (
     <div className="w-full h-full">
      <Spline
-       scene="https://prod.spline.design/gPKJyDCERTBduw11/scene.splinecode"
+       scene="https://prod.spline.design/Okvq2hZ-QPriofTg/scene.splinecode"
       />
     </div>
   );

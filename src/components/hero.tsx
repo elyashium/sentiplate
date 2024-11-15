@@ -17,6 +17,7 @@ export const Hero = () => {
       <div className='hero'>
 
 
+
         <div className="titleCard">
 
 

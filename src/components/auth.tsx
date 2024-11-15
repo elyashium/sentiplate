@@ -2,6 +2,7 @@ import { useState } from "react";
 import { auth, googleProvider } from "../config/firebase";
 import { createUserWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import ThreeDComponent from "./ThreeDComponent";
 
 export const Auth = () => {
     const [email, setEmail] = useState("");
@@ -11,7 +12,7 @@ export const Auth = () => {
     const handleSignIn = async () => {
         try {
             await createUserWithEmailAndPassword(auth, email, password);
-            navigate("/")
+            navigate("/home")
         } catch (error) {
             console.error("Error signing in:", error);
         }
@@ -20,7 +21,7 @@ export const Auth = () => {
     const signInWithGoogle = async () => {
         try {
             await signInWithPopup(auth, googleProvider)
-            navigate("/")
+            navigate("/home")
         } catch (err) {
             console.error(err);
         }
@@ -39,6 +40,8 @@ export const Auth = () => {
         <div>
 
             <div className="sign-in-container">
+
+                <ThreeDComponent />
                 <div className="sign-in-card">
                     <h2 className="sign-in-title">Sign In</h2>
                     <input
