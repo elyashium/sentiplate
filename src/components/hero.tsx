@@ -1,6 +1,5 @@
 
 import "../App.css"
-import SearchBar from "./SearchBar";
 
 export const Hero = () => {
   return (
@@ -35,6 +34,8 @@ export const Hero = () => {
       <div className="whiteRightDown">
         <img src="src\images\whiteRightDown.png" alt="white bowl right " className="autoRotate" />
       </div>
+
+     
 
     </div>
   )
