@@ -25,7 +25,7 @@ export const Hero = () => {
           Find the perfect recipe for your every mood.
         </div>
 
-        <div className="tryit">
+        <div onClick={handleButtonClick} className="tryit">
 
           <div className="btn">Try it out</div>
           <img src="src\images\arrow.svg" alt="" />
