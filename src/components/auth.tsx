@@ -1,7 +1,11 @@
-import React from 'react'
 
-export default function auth() {
+import ThreeDComponent from './ThreeDComponent'
+
+export default function Auth() {
   return (
-    <div>auth</div>
+    <div className="Threeleft">
+    <ThreeDComponent />
+    
+    </div>
   )
 }
