@@ -2,6 +2,7 @@
 
 import "../App.css"
 import { useNavigate } from "react-router-dom"
+import AboutUs from "./AboutUS";
 
 export const Hero = () => {
 
@@ -46,14 +47,10 @@ export const Hero = () => {
         <div className="whiteRightDown">
           <img src="src\images\whiteRightDown.png" alt="white bowl right " className="autoRotate" />
         </div>
-
-
-        <div className="upperline"></div>
-
-        <div className="lowerline"></div>
-
-
       </div>
+
+
+      <AboutUs/>
     </main>
   )
 }

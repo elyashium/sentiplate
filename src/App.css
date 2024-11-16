@@ -19,6 +19,7 @@ body {
 .hero {
 
   background-image: url('./images/bg.jpg');
+  background-color: #000000;
   background-size: cover;
   background-position: center;
   width: 99vw;
@@ -26,6 +27,35 @@ body {
   position: absolute;
   
 
+}
+
+.aboutUs{
+  position: relative;
+  top : 140vh;
+  height: 200vh;
+  
+  
+}
+
+.titleAbout{
+  color: black;
+  font-family: inter;
+  font-size: 100px;
+  font-weight: 800;
+  position: relative;
+  left: 10vw
+ 
+}
+
+.descrip{
+  font-size: 20px;
+  font-family: inter;
+  font-weight: 500;
+  padding-top: 5vh;
+  position: relative;
+  left: 10vw;
+  word-wrap: break-word;
+  width: 35vw;
 }
 
 
@@ -476,4 +506,257 @@ padding: 3vh;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+.lowerline{
+  position: relative;
+    gap: 18vh;
+    display: flex;
+    bottom: 110vh;
+    z-index: -1;
+
+}
+
+.upperline{
+  position: relative;
+  display: flex;
+  gap: 18vh;
+}
+
+
+.lowerline {
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  position: relative;
+  padding: 20px 0;
+  white-space: nowrap;
+}
+
+/* Create the sliding container */
+.lowerline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Optional: Add gradient masks for smooth fade in/out at edges */
+  background: linear-gradient(
+    90deg,
+    white 0%,
+    transparent 5%,
+    transparent 95%,
+    white 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Style the images */
+.lowerline img {
+  height: 48px;
+  width: 48px;
+  margin-right: 32px;
+  display: inline-block;
+}
+
+/* Create two sets of sliding content */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Wrap the original content to create infinite loop */
+.lowerline-content {
+  display: inline-block;
+  animation: slide 20s linear infinite;
+}
+
+/* Hover to pause */
+.lowerline-content:hover {
+  animation-play-state: paused;
+}
+
+/* Optional: Add smooth transitions for speed changes */
+.lowerline-content {
+  transition: animation-play-state 0.5s ease;
+}
+
+/* For smoother animation on high-performance displays */
+@media (prefers-reduced-motion: no-preference) {
+  .lowerline-content {
+    will-change: transform;
+  }
+}
+
+/* Footer Container */
+.footer {
+  width: 100%;
+  background-color: white;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+}
+
+.footer-container {
+  max-width: 72rem; /* 1152px */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Grid Layout */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Section Styling */
+.footer-section {
+  margin-bottom: 1.5rem;
+}
+
+.footer-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* Links List */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #3b82f6;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  color: #4b5563;
+  transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+}
+
+.social-icon.github:hover {
+  color: #1f2937;
+}
+
+.social-icon.twitter:hover {
+  color: #1da1f2;
+}
+
+.social-icon.instagram:hover {
+  color: #e1306c;
+}
+
+.social-icon.email:hover {
+  color: #ef4444;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eaeaea;
+}
+
+.footer-bottom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.made-with-love {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.heart-icon {
+  color: #ef4444;
+  animation: heartbeat 1.5s ease infinite;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Hover Effects */
+.footer a {
+  transition: all 0.2s ease;
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  .footer-container {
+    padding: 0 1.5rem;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
 }
